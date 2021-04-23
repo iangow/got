@@ -9,13 +9,14 @@ See below for code illustrating its use and discussion of how to produce two-way
 ### R code
 
 This [R code](Code/cluster2.R) includes a function `coeftest.cluster` which can be applied to an existing model fit toreturn table output based on two-way cluster-robust standard errors.  
-See [here](Code/cluster.test.R.html) for code illustrating its use against data from Mitchell Petersen's [website](http://www.kellogg.northwestern.edu/faculty/petersen/htm/).
+See [here](Code/cluster_test.R) for code illustrating its use against data from Mitchell Petersen's [website](http://www.kellogg.northwestern.edu/faculty/petersen/htm/).
 This code was adapted from code provided by [Mahmood Arai](http://people.su.se/~ma/).
 
 ### Matlab routines and simulation code
 
 As part of our simulations, we developed a number of general purpose econometric routines.
-Details on these are provided [here](matlab_routines.html). To run the simulation you need access to Matlab and the files contained [here](Code/matlab).
+Details on these are provided [here](matlab_routines.md).
+To run the simulation you need access to Matlab and the files contained [here](Code/matlab).
 
 ### Test code and data sets
 
