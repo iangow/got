@@ -1,4 +1,4 @@
-This site contains additional analyses and portions of the code used in the [paper](paper.html) *Correcting for Cross-Sectional and Time-Series Dependence in Accounting Research* by [Ian Gow](https://github.com/iangow),
+This site contains additional analyses and portions of the code used in the [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1175614) *Correcting for Cross-Sectional and Time-Series Dependence in Accounting Research* by [Ian Gow](https://github.com/iangow),
 [Gaizka Ormazabal](https://www.iese.edu/faculty-research/faculty/gaizka-ormazabal/) and [Daniel Taylor](http://www.danieltayloranalytics.com).
 
 ### SAS code
