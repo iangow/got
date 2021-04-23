@@ -1,0 +1,56 @@
+>> % This code assumes that CoCdata.mat and clusterreg.m
+>> % are in the working directory in Matlab.
+>> % Load the data
+>> load CoCdata;
+>>
+>> % The dependent variable
+>> y = coc_brav;
+>> % Specify the regressors
+>> CONSTANT = ones(size(y));
+>> X = [ffa_beta1 ffa_beta2 ffa_beta3 ffa_beta4 sz bm volatility];
+>> X = [X vs CONSTANT];
+>>
+>> % Cluster by firm
+>> clusterreg(y, X, gvkey)
+
+ans =
+
+   -0.1535    0.0887   -1.7300
+   -0.1143    0.0493   -2.3207
+   -0.0063    0.0404   -0.1571
+   -0.0758    0.0893   -0.8495
+   -0.0326    0.0277   -1.1737
+    0.0482    0.0507    0.9488
+    1.9897    0.5465    3.6408
+   -0.2317    0.3069   -0.7551
+    9.3511    0.2408   38.8310
+    
+>> % Cluster by year
+>> clusterreg(y, X, fyear)
+
+ans =
+
+   -0.1535    0.0562   -2.7293
+   -0.1143    0.0406   -2.8132
+   -0.0063    0.0483   -0.1314
+   -0.0758    0.1031   -0.7354
+   -0.0326    0.0359   -0.9067
+    0.0482    0.0353    1.3639
+    1.9897    0.4448    4.4732
+   -0.2317    0.2514   -0.9217
+    9.3511    0.2555   36.5992
+
+>> % Do two-way cluster-robust standard errors
+>> clusterreg(y, X, fyear, gvkey)
+
+ans =
+
+   -0.1535    0.0562   -2.7319
+   -0.1143    0.0393   -2.9054
+   -0.0063    0.0499   -0.1273
+   -0.0758    0.1049   -0.7234
+   -0.0326    0.0360   -0.9033
+    0.0482    0.0399    1.2071
+    1.9897    0.4622    4.3045
+   -0.2317    0.2524   -0.9179
+    9.3511    0.2588   36.1330
